@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task Tracker</title>
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h1>Task Tracker</h1>
+        <div class="row">
+            <div class="col">
+                <input class="form-control" id="taskName" placeholder="type task"/>
+            </div>
+            <div class="col">
+                <input class="form-control" id="taskDescription"  placeholder="describe task"/>
+            </div>
+            <button id="createTask" class="btn btn-primary col-auto me-3">Create</button>
+        </div>
+        <div class="row p-3">
+            <table class="col-12 table table-striped" id="dataTable">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col style="width: 1%;">
+                  </colgroup>
+                <thead>
+
+                    <tr>
+                        <th>Task</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>
